@@ -11,7 +11,7 @@
 [Documentation]:  https://img.shields.io/badge/docs-Manual-orange.svg?logo=markdown
 [License]:        https://img.shields.io/badge/license-BSD%203-blueviolet.svg
 [Version]:        https://img.shields.io/badge/release-2020.02,%20"Open%20Source%20Release"-red.svg?logo=v
-[Build Status]:   https://github.com/b-lang-org/bsc/workflows/CI/badge.svg?branch=master&event=push
+[Build Status]:   https://github.com/b-lang-org/bsc/workflows/CI/badge.svg?branch=main&event=push
 
 <strong>
   <a href="https://github.com/B-Lang-org/bsc">Homepage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://github.com/B-Lang-org/bsc">Get Started</a>
@@ -49,9 +49,6 @@ A separate repository, [bsc-contrib],
 exists for sharing libraries and utilities that don't (or don't yet) belong in
 the core tools.
 
-Tests and testing infrastructure are provided in a separate
-[bsc-testsuite] repository.
-
 A graphical environment for using BSC is available in a separate [bdw]
 repository. BDW (the BSC Development Workstation) provides a number of
 tools, including the ability to view simulation waveforms as
@@ -63,7 +60,6 @@ source-level values.
 [Shakti]: https://shakti.org.in
 
 [bsc-contrib]: https://github.com/B-Lang-org/bsc-contrib
-[bsc-testsuite]: https://github.com/B-Lang-org/bsc-testsuite
 [bdw]: https://github.com/B-Lang-org/bdw
 
 ---
@@ -240,7 +236,8 @@ An unoptimized, debug, or profiling build can be done using one of:
     $ make BSC_BUILD=DEBUG
     $ make BSC_BUILD=PROF
 
-For more extensive testing, see the [bsc-testsuite] repository.
+For more extensive testing, see the [testsuite README](testsuite/README.md)
+in the `testsuite` subdirectory.
 
 #### Choosing a Verilog simulator
 
@@ -299,6 +296,8 @@ Training and tutorials can be found in the
 
 ## License
 
-The Bluespec toolchain is available under the BSD license. The source code also
-includes several other components under various license agreements (all of it
-open/copyleft software). See `COPYING` for copyright and license details.
+The Bluespec toolchain is provided by [Bluespec Inc] and
+available under the BSD-3-Clause license.
+The source code also includes several other components under
+various license agreements (all of it open/copyleft software).
+See [`COPYING`](COPYING) for copyright and license details.
